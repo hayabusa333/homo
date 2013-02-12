@@ -15,10 +15,13 @@ class Homo
     @field = Field.new
   end
   def print
-#    puts @field.width
-    @field.field_set homo_type
+    puts @field.homo_move_field
     sleep 0.08
     @field.clear
+  end
+
+  def move
+    @field.field_set homo_type
   end
 
   def homo_type

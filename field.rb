@@ -33,7 +33,11 @@ class Field
 
 
   def field_set homo
-    puts homo
+    @homo_move_field = homo
+  end
+
+  def field_get
+    return @homo_move_field
   end
 
   attr_accessor :width, :homo_move_field
